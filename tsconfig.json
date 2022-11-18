@@ -19,6 +19,10 @@
       "@/common/*": ["common/*"],
       "@/epic/*": ["epic/*"],
       "@/pages/*": ["pages/*"],
+      "@/assets/*": ["assets/*"],
+      "@/icons/*": ["assets/icons/*"],
+      "@/images/*": ["assets/images/*"],
+      "@/utils/*":["utils/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

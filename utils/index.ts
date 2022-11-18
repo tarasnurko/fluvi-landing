@@ -1,0 +1,1 @@
+export { setSpacing } from "./design";
