@@ -7,6 +7,8 @@ import { Container } from "@/common/container";
 
 import Image from "next/image";
 import { ContainerHorizontal } from "@/common/container-horizontal";
+import { Link } from "@/common/link";
+import { BurgerMenu } from "../burger-menu";
 
 const InnerContainer = styled.div`
   margin-top: 20px;
@@ -26,7 +28,15 @@ const Component = () => {
     <Container>
       <InnerContainer>
         <Image src={Logo} alt="logo" />
-        <ContainerHorizontal></ContainerHorizontal>
+        <ContainerHorizontal gap={8}>
+          <Link href="test" type="header">
+            Регистрация
+          </Link>
+          <Link href="test" type="header">
+            Вход
+          </Link>
+          <BurgerMenu />
+        </ContainerHorizontal>
       </InnerContainer>
     </Container>
   );
