@@ -3,42 +3,73 @@ import styled from "styled-components";
 
 import Logo from "@/icons/logo.svg";
 
-import { Container } from "@/common/container";
-
 import Image from "next/image";
-import { ContainerHorizontal } from "@/common/container-horizontal";
-import { Link } from "@/common/link";
-import { BurgerMenu } from "../burger-menu";
 
-const InnerContainer = styled.div`
-  margin-top: 20px;
+import { HorizontalContainer } from "@/common/container";
+import { Link } from "@/common/link";
+import { BurgerMenu } from "@/epic/burger-menu";
+
+const Wrapper = styled.div`
   width: 100%;
-  height: 45px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--orange-primary);
+  z-index: 100;
+`;
+
+const Container = styled.div`
+  width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-  left: 0;
-  background-color: #7c5555;
+
+  @media (max-width: 1200px) {
+    width: 960px;
+  }
+
+  @media (max-width: 996px) {
+    width: 720px;
+  }
+
+  @media (max-width: 768px) {
+    width: 540px;
+  }
+  @media (max-width: 576px) {
+    width: 325px;
+  }
+`;
+
+const LinkWrapper = styled.div`
+  @media (max-width: 576px) {
+    display: none;
+  }
 `;
 
 const Component = () => {
   return (
-    <Container>
-      <InnerContainer>
+    <Wrapper>
+      <Container>
         <Image src={Logo} alt="logo" />
-        <ContainerHorizontal gap={8}>
-          <Link href="test" type="header">
-            Регистрация
-          </Link>
-          <Link href="test" type="header">
-            Вход
-          </Link>
+        <HorizontalContainer gap={8}>
+          <LinkWrapper>
+            <Link href="test" type="header">
+              Регистрация
+            </Link>
+          </LinkWrapper>
+          <LinkWrapper>
+            <Link href="test" type="header">
+              Вход
+            </Link>
+          </LinkWrapper>
           <BurgerMenu />
-        </ContainerHorizontal>
-      </InnerContainer>
-    </Container>
+        </HorizontalContainer>
+      </Container>
+    </Wrapper>
   );
 };
 

@@ -1,1 +1,6 @@
-export { default as Container } from "./elem";
+export {
+  Container,
+  PageContainer,
+  VerticalContainer,
+  HorizontalContainer,
+} from "./elem";

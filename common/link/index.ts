@@ -1,1 +1,1 @@
-export { default as Link } from "./elem";
+export { LinkElem as Link, LinkButton } from "./elem";
