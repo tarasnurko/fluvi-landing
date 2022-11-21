@@ -7,7 +7,7 @@ import { Container } from "@/common/container";
 import { VerticalContainer } from "@/common/container";
 import { MainTitle } from "@/common/title";
 
-import IphoneSrc from "@/images/iphone.png";
+import IphoneSrc from "@/images/screen/iphone.png";
 import SmileSrc from "@/images/emoji/smile.png";
 import HeartSrc from "@/images/emoji/heart.png";
 import DemonSrc from "@/images/emoji/demon.png";
@@ -23,7 +23,7 @@ import PeachSrc from "@/images/emoji/peach.png";
 
 const Wrapper = styled.section`
   width: 100%;
-  padding: 167px 0;
+  padding: 140px 0;
   position: relative;
   background-color: var(--orange-primary);
   overflow: hidden;
@@ -32,7 +32,7 @@ const Wrapper = styled.section`
     padding-bottom: 300px;
   }
   @media (max-width: 576px) {
-    padding: 88px 0 308px 0;
+    padding: 20px 0 308px 0;
   }
 `;
 

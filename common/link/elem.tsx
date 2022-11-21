@@ -31,6 +31,14 @@ export const LinkButton = styled(Link)<ILinkButton>`
 
   cursor: pointer;
 
+  transition: all 0.6s ease-in-out;
+
+  &:hover {
+    color: var(--text-white);
+    background-color: var(--orange-primary);
+    box-shadow: 0 0 0 2px var(--bg-primary);
+  }
+
   @media (max-width: 576px) {
     font-size: 14px;
     display: flex;

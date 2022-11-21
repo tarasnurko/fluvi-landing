@@ -12,7 +12,7 @@ import { BurgerMenu } from "@/epic/burger-menu";
 const Wrapper = styled.div`
   width: 100%;
 
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
   background-color: var(--orange-primary);

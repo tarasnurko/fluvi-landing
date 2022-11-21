@@ -8,6 +8,7 @@ import Image from "next/image";
 import { FirstSection } from "@/epic/section-first";
 import { PageContainer } from "@/common/container";
 import { ResultSection } from "@/epic/section-result";
+import { IdeaSection } from "@/epic/screen-idea";
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <Header />
       <FirstSection />
       <ResultSection />
+      <IdeaSection />
     </PageContainer>
   );
 };
