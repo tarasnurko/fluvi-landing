@@ -5,15 +5,17 @@ import { Header } from "@/epic/header";
 
 import Head from "next/head";
 import Image from "next/image";
-import { FirstScreen } from "@/epic/screen-first";
+import { FirstSection } from "@/epic/section-first";
 import { PageContainer } from "@/common/container";
+import { ResultSection } from "@/epic/section-result";
 
 const Home: NextPage = () => {
   return (
     <PageContainer>
       <HomeHead />
       <Header />
-      <FirstScreen />
+      <FirstSection />
+      <ResultSection />
     </PageContainer>
   );
 };

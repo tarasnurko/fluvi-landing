@@ -1,1 +1,1 @@
-export { MainTitle, Title } from "./elem";
+export { MainTitle, Title, Subtitle } from "./elem";

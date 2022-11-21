@@ -339,7 +339,7 @@ const Component = () => {
     <Wrapper>
       <Container>
         <VerticalContainer gap={8} width="480px" mbWidth="auto">
-          <MainTitle>Используй соцсети на максимум</MainTitle>
+          <MainTitle>Используй соц. сети на максимум</MainTitle>
           <ListContainer>
             <ListItem type="white">Начни вести системно соцсети </ListItem>
             <ListItem type="white">Вся работа с контентом в 1 месте </ListItem>
