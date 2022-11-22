@@ -72,6 +72,7 @@ const AnalyticsImage = styled(Image)<ImageProps>`
   right: 20px;
   z-index: 3;
   box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.075);
+  border-radius: 20px 20px 0 0;
 
   @media (max-width: 996px) {
     width: 250px;
@@ -92,6 +93,7 @@ const TasksImage = styled(Image)<ImageProps>`
   right: 0;
   z-index: 4;
   box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.075);
+  border-radius: 20px 0 20px 0;
 
   @media (max-width: 996px) {
     width: 180px;

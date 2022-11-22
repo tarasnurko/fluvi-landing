@@ -16,6 +16,7 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     width: 540px;
   }
+
   @media (max-width: 576px) {
     width: 325px;
   }
@@ -56,25 +57,21 @@ export const VerticalContainer = styled.div<IVertivalContainer>`
 
   @media (max-width: 1200px) {
     width: ${(props) => (props.lgWidth ? props.lgWidth : "")};
-
     height: ${(props) => (props.lgHeight ? props.lgHeight : "")};
   }
 
   @media (max-width: 996px) {
     width: ${(props) => (props.mdWidth ? props.mdWidth : "")};
-
     height: ${(props) => (props.mdHeight ? props.mdHeight : "")};
   }
 
   @media (max-width: 768px) {
     width: ${(props) => (props.smWidth ? props.smWidth : "")};
-
     height: ${(props) => (props.smHeight ? props.smHeight : "")};
   }
 
   @media (max-width: 576px) {
     width: ${(props) => (props.mbWidth ? props.mbWidth : "")};
-
     height: ${(props) => (props.mbHeight ? props.mbHeight : "")};
   }
 `;
@@ -108,25 +105,21 @@ export const HorizontalContainer = styled.div<IHorizontalContainer>`
 
   @media (max-width: 1200px) {
     width: ${(props) => (props.lgWidth ? props.lgWidth : "")};
-
     height: ${(props) => (props.lgHeight ? props.lgHeight : "")};
   }
 
   @media (max-width: 996px) {
     width: ${(props) => (props.mdWidth ? props.mdWidth : "")};
-
     height: ${(props) => (props.mdHeight ? props.mdHeight : "")};
   }
 
   @media (max-width: 768px) {
     width: ${(props) => (props.smWidth ? props.smWidth : "")};
-
     height: ${(props) => (props.smHeight ? props.smHeight : "")};
   }
 
   @media (max-width: 576px) {
     width: ${(props) => (props.mbWidth ? props.mbWidth : "")};
-
     height: ${(props) => (props.mbHeight ? props.mbHeight : "")};
   }
 `;

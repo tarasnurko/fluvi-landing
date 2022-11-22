@@ -9,6 +9,7 @@ import { FirstSection } from "@/epic/section-first";
 import { PageContainer } from "@/common/container";
 import { ResultSection } from "@/epic/section-result";
 import { IdeaSection } from "@/epic/screen-idea";
+import { RoadmapSection } from "@/epic/section-roadmap";
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <FirstSection />
       <ResultSection />
       <IdeaSection />
+      <RoadmapSection />
     </PageContainer>
   );
 };
