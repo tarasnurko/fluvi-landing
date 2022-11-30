@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 import { VerticalContainer } from "@/common/container";
 import { LinkButton } from "@/common/link";
-import { Subtitle } from "@/common/title";
 
 import AnalyticsSrc from "@/images/screen/analytics.png";
 import TasksSrc from "@/images/screen/tasks.png";
@@ -61,6 +60,28 @@ const Title = styled.h2`
 
   @media (max-width: 576px) {
     font-size: 20px;
+  }
+`;
+
+const Text = styled.p`
+  width: 415px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: var(--text-white);
+
+  @media (max-width: 996px) {
+    width: 300px;
+  }
+
+  @media (max-width: 768px) {
+    width: auto;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 12px;
   }
 `;
 
@@ -130,12 +151,12 @@ const Component = () => {
         >
           <VerticalContainer gap={3}>
             <Title>Главная идея Fluvi</Title>
-            <Subtitle type="white">
+            <Text>
               Мы собираем в 1м месте всех, кто профессионально работает с
               социальными сетями. Мы меняем подход к контент маркетингу и
               ведению социальных сетей. Мы делаем его понятным, удобным и
               эффективным
-            </Subtitle>
+            </Text>
           </VerticalContainer>
           <LinkButton href="link">Попробовать бесплатно</LinkButton>
         </VerticalContainer>

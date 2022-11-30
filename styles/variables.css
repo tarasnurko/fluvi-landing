@@ -1,6 +1,7 @@
 :root {
   --bg-primary: #FFFFFF;
   --bg-secondary: #F7F7F7;
+  --bg-dark-light: #F6F6F6;
 
   --text-white: #FFFFFF;
 
@@ -12,18 +13,3 @@
 
   --orange-primary: #F46F17;
 }
-
-/*
-
-penultimate section fluvi logo, numbers in progress fluvi F7F7F7
-
-text FFFFFF
-
-link bottom, bottom email, text block, title block, subtitle section, title section 363636
-
-small text 888888
-
-small title in block 121212
-
-color text, color title F46F17
-*/

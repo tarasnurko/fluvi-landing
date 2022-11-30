@@ -1,8 +1,12 @@
+import Image, { ImageProps } from "next/image";
+import styled from "styled-components";
+
 import { Container, VerticalContainer } from "@/common/container";
 import { ListContainer, ListItem } from "@/common/list";
-import { Subtitle, Title } from "@/common/title";
-import styled from "styled-components";
-import { Dropdown } from "../dropdown";
+import { Title } from "@/common/title";
+import { DropdownText } from "@/epic/dropdown-text";
+
+import BottleSrc from "@/images/bottle.png";
 
 const Wrapper = styled.section`
   width: 100%;
@@ -14,6 +18,17 @@ const Wrapper = styled.section`
 
   @media (max-width: 768px) {
     padding: 50px 0 100px 0;
+  }
+`;
+
+const Text = styled.div`
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--text-dark-secondary);
+
+  @media (max-width: 576px) {
+    font-size: 12px;
   }
 `;
 
@@ -114,7 +129,11 @@ const LineEnd = styled.div`
   top: 0;
   right: -150px;
   z-index: 3;
-  background: linear-gradient(to right, #e6e6e6, rgba(230, 230, 230, 0));
+  background: linear-gradient(
+    to right,
+    var(--bg-dark-light),
+    rgba(230, 230, 230, 0)
+  );
   @media (max-width: 768px) {
     width: 100%;
     height: 50px;
@@ -122,7 +141,11 @@ const LineEnd = styled.div`
     right: unset;
     left: 0;
     bottom: -50px;
-    background: linear-gradient(to bottom, #e6e6e6, rgba(230, 230, 230, 0));
+    background: linear-gradient(
+      to bottom,
+      var(--bg-dark-light),
+      rgba(230, 230, 230, 0)
+    );
   }
 `;
 
@@ -148,6 +171,53 @@ const StepSubtitle = styled.h4`
   }
 `;
 
+const BottleImage = styled(Image)<ImageProps>`
+  position: absolute;
+  top: 270px;
+  right: 0;
+  z-index: 5;
+
+  filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.1));
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+`;
+
+const BgCircle = styled.div`
+  width: 128px;
+  height: 128px;
+
+  position: absolute;
+  top: 400px;
+  left: -64px;
+  z-index: 5;
+
+  border: 1px solid var(--bg-dark-light);
+  border-radius: 100%;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+`;
+
+const BgCircleDot = styled.div`
+  width: 8px;
+  height: 8px;
+
+  position: absolute;
+  top: 60px;
+  right: -4px;
+  z-index: 6;
+
+  background-color: var(--bg-dark-light);
+  border-radius: 100%;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+`;
+
 const Component = () => {
   return (
     <Wrapper>
@@ -159,15 +229,16 @@ const Component = () => {
             mdWidth="440px"
             mbWidth="90%"
           >
-            <Title type="normal">Fluvi Roadmap</Title>
-            <Subtitle type="normal">
+            <Title>Fluvi Roadmap</Title>
+            <Text>
               Каждый месяц мы планируем улучшать продукт и добавлять новые
-              функции. К началу 2023 мы превратим Fluvi в{" "}
-              <Dropdown text="* Приложение 10 в 1. Суть идеи «Super App» - решение всех задач в одном месте. Теперь планировать, создавать, редактироватьи анализировать контент можно в одном месте. Это Super App Fluvi.">
-                Super App*
-              </Dropdown>{" "}
-              с широким функционалом.
-            </Subtitle>
+              функции. К началу 2023 мы превратим Fluvi в&nbsp;
+              <DropdownText
+                text="Super App*"
+                dropdownText="* Приложение 10 в 1. Суть идеи «Super App» - решение всех задач в одном месте. Теперь планировать, создавать, редактироватьи анализировать контент можно в одном месте. Это Super App Fluvi."
+              ></DropdownText>
+              &nbsp;с широким функционалом.
+            </Text>
           </VerticalContainer>
 
           <RoadmapContainer>
@@ -229,6 +300,10 @@ const Component = () => {
           </RoadmapContainer>
         </VerticalContainer>
       </Container>
+      <BgCircle>
+        <BgCircleDot />
+      </BgCircle>
+      <BottleImage src={BottleSrc} alt="bottle" />
     </Wrapper>
   );
 };

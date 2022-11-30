@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-import Logo from "@/icons/logo.svg";
+import Link, { LinkProps } from "next/link";
+
+import LogoSrc from "@/icons/logo.svg";
 
 import Image from "next/image";
 
 import { HorizontalContainer } from "@/common/container";
-import { Link } from "@/common/link";
 import { BurgerMenu } from "@/epic/burger-menu";
 
 const Wrapper = styled.div`
@@ -44,7 +45,42 @@ const Container = styled.div`
   }
 `;
 
-const LinkWrapper = styled.div`
+const HeaderLink = styled(Link)<LinkProps>`
+  position: relative;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: var(--text-white);
+
+  transition: all 0.6s ease-in-out;
+
+  &::after {
+    content: "";
+
+    width: 0;
+    height: 2px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    opacity: 0;
+    background-color: var(--text-white);
+    border-radius: 1px;
+
+    transition: all 0.6s ease-in-out;
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+
+      opacity: 1;
+    }
+  }
+
   @media (max-width: 576px) {
     display: none;
   }
@@ -54,18 +90,10 @@ const Component = () => {
   return (
     <Wrapper>
       <Container>
-        <Image src={Logo} alt="logo" />
+        <Image src={LogoSrc} alt="logo" />
         <HorizontalContainer gap={8}>
-          <LinkWrapper>
-            <Link href="test" type="header">
-              Регистрация
-            </Link>
-          </LinkWrapper>
-          <LinkWrapper>
-            <Link href="test" type="header">
-              Вход
-            </Link>
-          </LinkWrapper>
+          <HeaderLink href="link">Регистрация</HeaderLink>
+          <HeaderLink href="link">Вход</HeaderLink>
           <BurgerMenu />
         </HorizontalContainer>
       </Container>

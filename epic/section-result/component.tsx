@@ -6,7 +6,7 @@ import {
   HorizontalContainer,
   VerticalContainer,
 } from "@/common/container";
-import { Subtitle, Title } from "@/common/title";
+import { Title } from "@/common/title";
 
 import ClockSrc from "@/images/emoji-result/clock.png";
 import MoneySrc from "@/images/emoji-result/money.png";
@@ -17,6 +17,7 @@ import FireSrc from "@/images/emoji-result/fire.png";
 
 import CrownSrc from "@/images/crown.png";
 import LineSrc from "@/icons/dashed-line.svg";
+import { Text } from "@/common/text";
 
 const Wrapper = styled.section`
   width: 100%;
@@ -129,11 +130,11 @@ const Component = () => {
       <Container>
         <VerticalContainer gap={12}>
           <VerticalContainer gap={4} width="440px" mbWidth="100%">
-            <Title type="normal">Какой результат даёт Fluvi</Title>
-            <Subtitle type="normal" width="400px" mbWidth="280px">
+            <Title>Какой результат даёт Fluvi</Title>
+            <Text width="400px" mbWidth="280px">
               Мы помогаем пользователям с двумя вещами: вести соцсети легче,
               вести соцсети эффективнее
-            </Subtitle>
+            </Text>
           </VerticalContainer>
           <BlocksWrapper>
             <BlocksColumn>
@@ -143,9 +144,7 @@ const Component = () => {
                     <BlockImage src={ClockSrc} alt="clock" />
                     <BlockTitle>Регулярность</BlockTitle>
                   </HorizontalContainer>
-                  <Subtitle type="normal">
-                    Начнешь вести блог системно и не выпадать
-                  </Subtitle>
+                  <Text>Начнешь вести блог системно и не выпадать</Text>
                 </VerticalContainer>
               </Block>
               <Block>
@@ -154,9 +153,7 @@ const Component = () => {
                     <BlockImage src={MoneySrc} alt="money" />
                     <BlockTitle>Рост дохода</BlockTitle>
                   </HorizontalContainer>
-                  <Subtitle type="normal">
-                    Заработаешь больше и быстрее денег с блога
-                  </Subtitle>
+                  <Text>Заработаешь больше и быстрее денег с блога</Text>
                 </VerticalContainer>
               </Block>
               <Block>
@@ -165,9 +162,7 @@ const Component = () => {
                     <BlockImage src={PortfolioSrc} alt="portfolio" />
                     <BlockTitle>Блог как бизнес</BlockTitle>
                   </HorizontalContainer>
-                  <Subtitle type="normal">
-                    Будешь управлять всеми процессами блога
-                  </Subtitle>
+                  <Text>Будешь управлять всеми процессами блога</Text>
                 </VerticalContainer>
               </Block>
             </BlocksColumn>
@@ -178,9 +173,7 @@ const Component = () => {
                     <BlockImage src={GraphSrc} alt="graph" />
                     <BlockTitle>Статистика</BlockTitle>
                   </HorizontalContainer>
-                  <Subtitle type="normal">
-                    Сможешь увидеть продвинутую статистику блога
-                  </Subtitle>
+                  <Text>Сможешь увидеть продвинутую статистику блога</Text>
                 </VerticalContainer>
               </Block>
 
@@ -190,9 +183,7 @@ const Component = () => {
                     <BlockImage src={RocketSrc} alt="rocket" />
                     <BlockTitle>Продвижение</BlockTitle>
                   </HorizontalContainer>
-                  <Subtitle type="normal">
-                    Сможешь ежедневно привлекать подписчиков
-                  </Subtitle>
+                  <Text>Сможешь ежедневно привлекать подписчиков</Text>
                 </VerticalContainer>
               </Block>
 
@@ -202,9 +193,7 @@ const Component = () => {
                     <BlockImage src={FireSrc} alt="fire" />
                     <BlockTitle>Эффективность</BlockTitle>
                   </HorizontalContainer>
-                  <Subtitle type="normal">
-                    Сможешь повышать все показатели блога
-                  </Subtitle>
+                  <Text>Сможешь повышать все показатели блога</Text>
                 </VerticalContainer>
               </Block>
             </BlocksColumn>
