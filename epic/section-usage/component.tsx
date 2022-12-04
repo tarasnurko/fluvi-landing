@@ -63,7 +63,7 @@ const StepNumberContainer = styled.div`
 `;
 
 const StepNumberImage = styled(Image)<ImageProps>`
-  width: 52px;
+  width: auto;
   height: 35px;
 
   @media (max-width: 768px) {
@@ -326,7 +326,7 @@ const Component = () => {
         </VerticalContainer>
       </Container>
       <CowboyImage src={CowboySrc} alt="cowboy" />
-      <PleasureImage src={PleasureSrc} alt="pleasure" />
+      <PleasureImage src={PleasureSrc} alt="pleasure" priority />
       <CircleBg src={CircleSrc} alt="circle" />
     </Wrapper>
   );

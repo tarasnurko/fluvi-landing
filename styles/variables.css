@@ -1,15 +1,17 @@
 :root {
-  --bg-primary: #FFFFFF;
-  --bg-secondary: #F7F7F7;
-  --bg-dark-light: #F6F6F6;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f7f7f7;
+  --bg-dark-light: #f6f6f6;
 
-  --text-white: #FFFFFF;
+  --text-white: #ffffff;
+
+  --color-gray: #e6e6e6;
 
   --text-light-primary: #888888;
-  --text-light-secondary: #F7F7F7;
+  --text-light-secondary: #f7f7f7;
 
   --text-dark-primary: #121212;
   --text-dark-secondary: #363636;
 
-  --orange-primary: #F46F17;
+  --orange-primary: #f46f17;
 }

@@ -126,6 +126,8 @@ const TasksImage = styled(Image)<ImageProps>`
 `;
 
 const PeopleImage = styled(Image)<ImageProps>`
+  width: 180px;
+  height: auto;
   display: none;
   position: absolute;
   bottom: 0;
@@ -134,7 +136,6 @@ const PeopleImage = styled(Image)<ImageProps>`
 
   @media (max-width: 768px) {
     display: block;
-    width: 180px;
   }
 `;
 
@@ -160,7 +161,7 @@ const Component = () => {
           </VerticalContainer>
           <LinkButton href="link">Попробовать бесплатно</LinkButton>
         </VerticalContainer>
-        <AnalyticsImage src={AnalyticsSrc} alt="analytics" />
+        <AnalyticsImage src={AnalyticsSrc} alt="analytics" priority />
         <TasksImage src={TasksSrc} alt="tasks" />
         <PeopleImage src={PeopleSrc} alt="people" />
       </Container>

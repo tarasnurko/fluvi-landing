@@ -44,6 +44,10 @@ interface IVertivalContainer {
   mbHeight?: string;
 
   gap?: number;
+  lgGap?: number;
+  mdGap?: number;
+  smGap?: number;
+  mbGap?: number;
 }
 
 export const VerticalContainer = styled.div<IVertivalContainer>`
@@ -53,26 +57,30 @@ export const VerticalContainer = styled.div<IVertivalContainer>`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: ${(props) => setSpacing(props.gap)};
+  gap: ${(props) => (props.gap ? setSpacing(props.gap) : setSpacing(3))};
 
   @media (max-width: 1200px) {
     width: ${(props) => (props.lgWidth ? props.lgWidth : "")};
     height: ${(props) => (props.lgHeight ? props.lgHeight : "")};
+    gap: ${(props) => (props.lgGap ? setSpacing(props.lgGap) : "")};
   }
 
   @media (max-width: 996px) {
     width: ${(props) => (props.mdWidth ? props.mdWidth : "")};
     height: ${(props) => (props.mdHeight ? props.mdHeight : "")};
+    gap: ${(props) => (props.mdGap ? setSpacing(props.mdGap) : "")};
   }
 
   @media (max-width: 768px) {
     width: ${(props) => (props.smWidth ? props.smWidth : "")};
     height: ${(props) => (props.smHeight ? props.smHeight : "")};
+    gap: ${(props) => (props.smGap ? setSpacing(props.smGap) : "")};
   }
 
   @media (max-width: 576px) {
     width: ${(props) => (props.mbWidth ? props.mbWidth : "")};
     height: ${(props) => (props.mbHeight ? props.mbHeight : "")};
+    gap: ${(props) => (props.mbGap ? setSpacing(props.mbGap) : "")};
   }
 `;
 
@@ -93,6 +101,10 @@ interface IHorizontalContainer {
   mbHeight?: string;
 
   gap?: number;
+  lgGap?: number;
+  mdGap?: number;
+  smGap?: number;
+  mbGap?: number;
 }
 
 export const HorizontalContainer = styled.div<IHorizontalContainer>`
@@ -101,25 +113,29 @@ export const HorizontalContainer = styled.div<IHorizontalContainer>`
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: ${(props) => setSpacing(props.gap)};
+  gap: ${(props) => (props.gap ? setSpacing(props.gap) : setSpacing(3))};
 
   @media (max-width: 1200px) {
     width: ${(props) => (props.lgWidth ? props.lgWidth : "")};
     height: ${(props) => (props.lgHeight ? props.lgHeight : "")};
+    gap: ${(props) => (props.lgGap ? setSpacing(props.lgGap) : "")};
   }
 
   @media (max-width: 996px) {
     width: ${(props) => (props.mdWidth ? props.mdWidth : "")};
     height: ${(props) => (props.mdHeight ? props.mdHeight : "")};
+    gap: ${(props) => (props.mdGap ? setSpacing(props.mdGap) : "")};
   }
 
   @media (max-width: 768px) {
     width: ${(props) => (props.smWidth ? props.smWidth : "")};
     height: ${(props) => (props.smHeight ? props.smHeight : "")};
+    gap: ${(props) => (props.smGap ? setSpacing(props.smGap) : "")};
   }
 
   @media (max-width: 576px) {
     width: ${(props) => (props.mbWidth ? props.mbWidth : "")};
     height: ${(props) => (props.mbHeight ? props.mbHeight : "")};
+    gap: ${(props) => (props.mbGap ? setSpacing(props.mbGap) : "")};
   }
 `;

@@ -348,11 +348,11 @@ const Component = () => {
           <LinkButton href="link">Попробовать бесплатно</LinkButton>
         </VerticalContainer>
       </Container>
-      <IphoneImage src={IphoneSrc} alt="iphone" />
+      <IphoneImage src={IphoneSrc} alt="iphone" priority />
       <SmileImage src={SmileSrc} alt="smile" />
       <HeartImage src={HeartSrc} alt="heart" />
       <DemonImage src={DemonSrc} alt="demon" />
-      <SurprizeImage src={SurprizeSrc} alt="surprize" />
+      <SurprizeImage src={SurprizeSrc} alt="surprize" priority />
       <GhostImage src={GhostSrc} alt="ghost" />
       <SmileReverseImage src={SmileReverseSrc} alt="smile-reverse" />
       <PleasureImage src={PleasureSrc} alt="pleasure" />

@@ -87,7 +87,7 @@ const BlockTitle = styled.h4`
 
 const BlockImage = styled(Image)<ImageProps>`
   width: 28px;
-  height: 28px;
+  height: auto;
 
   @media (max-width: 576px) {
     width: 20px;
@@ -201,7 +201,7 @@ const Component = () => {
         </VerticalContainer>
       </Container>
       <CrownImage src={CrownSrc} alt="crown" />
-      <LineImage src={LineSrc} alt="line" />
+      <LineImage src={LineSrc} alt="line" priority />
     </Wrapper>
   );
 };

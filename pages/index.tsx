@@ -11,6 +11,7 @@ import { ResultSection } from "@/epic/section-result";
 import { IdeaSection } from "@/epic/screen-idea";
 import { RoadmapSection } from "@/epic/section-roadmap";
 import { UsageSection } from "@/epic/section-usage";
+import { QuestionsSection } from "@/epic/section-questions";
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
       <IdeaSection />
       <RoadmapSection />
       <UsageSection />
+      <QuestionsSection />
     </PageContainer>
   );
 };
