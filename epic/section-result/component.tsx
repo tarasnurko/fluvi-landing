@@ -16,7 +16,7 @@ import RocketSrc from "@/images/emoji-result/rocket.png";
 import FireSrc from "@/images/emoji-result/fire.png";
 
 import CrownSrc from "@/images/crown.png";
-import LineSrc from "@/icons/dashed-line.svg";
+import LineSrc from "@/icons/dashed-line-orange.svg";
 import { Text } from "@/common/text";
 
 const Wrapper = styled.section`

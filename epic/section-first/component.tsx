@@ -360,7 +360,7 @@ const Component = () => {
       <EyesImage src={EyesSrc} alt="eyes" />
       <LoveImage src={LoveSrc} alt="love" />
       <RainbowImage src={RainbowSrc} alt="rainbow" />
-      <PeachImage src={PeachSrc} alt="peach" />
+      <PeachImage src={PeachSrc} alt="peach" priority />
     </Wrapper>
   );
 };
