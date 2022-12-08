@@ -13,6 +13,7 @@ import { RoadmapSection } from "@/epic/section-roadmap";
 import { UsageSection } from "@/epic/section-usage";
 import { QuestionsSection } from "@/epic/section-questions";
 import { ReviewsSection } from "@/epic/section-reviews";
+import { StartSection } from "@/epic/section-start";
 
 const Home: NextPage = () => {
   return (
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
       <UsageSection />
       <QuestionsSection />
       <ReviewsSection />
+      <StartSection />
     </PageContainer>
   );
 };
