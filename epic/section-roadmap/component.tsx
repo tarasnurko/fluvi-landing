@@ -225,9 +225,9 @@ const Component = () => {
         <VerticalContainer gap={12}>
           <VerticalContainer
             gap={3}
-            width="600px"
-            mdWidth="440px"
-            mbWidth="90%"
+            width="665px"
+            mdWidth="500px"
+            mbWidth="100%"
           >
             <Title>Fluvi Roadmap</Title>
             <Text>
