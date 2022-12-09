@@ -26,6 +26,8 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 32px;
+  position: relative;
+  z-index: 10;
 
   @media (max-width: 1200px) {
     max-width: 960px;

@@ -7,6 +7,10 @@ import { LinkButton } from "@/common/link";
 import AnalyticsSrc from "@/images/screen/analytics.png";
 import TasksSrc from "@/images/screen/tasks.png";
 import PeopleSrc from "@/images/people.png";
+import RocketSrc from "@/images/rocket.png";
+
+// import TopLinesSrc from "@/images/idea-lines/top-lines.png";
+// import BottomLinesSrc from "@/images/idea-lines/bottom-lines.png";
 
 const Wrapper = styled.section`
   width: 100%;
@@ -91,7 +95,7 @@ const AnalyticsImage = styled(Image)<ImageProps>`
   position: absolute;
   bottom: 0;
   right: 20px;
-  z-index: 3;
+  z-index: 9;
   box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.075);
   border-radius: 20px 20px 0 0;
 
@@ -112,7 +116,7 @@ const TasksImage = styled(Image)<ImageProps>`
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 4;
+  z-index: 10;
   box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.075);
   border-radius: 20px 0 20px 0;
 
@@ -132,12 +136,47 @@ const PeopleImage = styled(Image)<ImageProps>`
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 5;
+  z-index: 11;
 
   @media (max-width: 768px) {
     display: block;
   }
 `;
+
+const RocketImage = styled(Image)<ImageProps>`
+  width: 82px;
+  height: auto;
+  position: absolute;
+  top: -41px;
+  left: -47px;
+  z-index: 10;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+// const LinesContainer = styled.div`
+//   width: 100%;
+//   height: 100%;
+//   overflow: hidden;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   z-index: 2;
+// `;
+
+// const TopLines = styled(Image)<ImageProps>`
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+// `;
+
+// const BottomLines = styled(Image)<ImageProps>`
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+// `;
 
 const Component = () => {
   return (
@@ -164,6 +203,11 @@ const Component = () => {
         <AnalyticsImage src={AnalyticsSrc} alt="analytics" priority />
         <TasksImage src={TasksSrc} alt="tasks" />
         <PeopleImage src={PeopleSrc} alt="people" />
+        <RocketImage src={RocketSrc} alt="rocket" />
+        {/* <LinesContainer>
+          <TopLines src={TopLinesSrc} alt="top-lines" />
+          <BottomLines src={BottomLinesSrc} alt="bottom-lines" />
+        </LinesContainer> */}
       </Container>
     </Wrapper>
   );

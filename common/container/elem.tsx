@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { convertToPx, setSpacing, setValueOrAuto } from "utils/design";
+import { convertToPx, setSpacing, setValueOrAuto } from "utils";
 
 export const Container = styled.div`
   width: 1100px;

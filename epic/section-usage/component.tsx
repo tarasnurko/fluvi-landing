@@ -132,7 +132,7 @@ const StepBlock = styled.div`
 
   &:nth-of-type(n + 3) {
     &::before {
-      background-color: #e6e6e6;
+      background-color: var(--color-gray);
     }
   }
 
@@ -199,7 +199,7 @@ const GrayLine = styled.div`
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: #e6e6e6;
+  background-color: var(--color-gray);
 `;
 
 const ActiveLine = styled.div`

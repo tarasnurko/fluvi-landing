@@ -1,1 +1,1 @@
-export { setSpacing } from "./design";
+export { setSpacing, convertToPx, setValueOrAuto } from "./design";

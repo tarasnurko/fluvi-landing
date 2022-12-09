@@ -76,7 +76,7 @@ const StepDot = styled.div<{ active?: boolean }>`
   background: ${(props) =>
     props.active
       ? "linear-gradient(128.28deg, #F12C11 -28.29%, #F59019 103.39%)"
-      : "#E6E6E6"};
+      : "var(--color-gray)"};
 
   @media (max-width: 768px) {
     top: unset;
@@ -102,7 +102,7 @@ const GrayLine = styled.div`
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: #e6e6e6;
+  background-color: var(--color-gray);
 
   @media (max-width: 768px) {
   }

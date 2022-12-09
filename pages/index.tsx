@@ -28,7 +28,7 @@ const Home: NextPage = () => {
       <UsageSection />
       <QuestionsSection />
       <ReviewsSection />
-      {/* <StartSection /> */}
+      <StartSection />
       <Footer />
     </PageContainer>
   );
