@@ -162,7 +162,12 @@ const Component = () => {
             <ReviewBlock>
               <VerticalContainer gap={3} mbGap={4}>
                 <HorizontalContainer gap={5} mbGap={3}>
-                  <ReviewerImg src={Reviewer1Src} alt="reviewer-1" />
+                  <ReviewerImg
+                    src={Reviewer1Src}
+                    alt="reviewer-1"
+                    width={48}
+                    height={48}
+                  />
                   <VerticalContainer gap={2}>
                     <HorizontalContainer gap={2}>
                       <ReviewerName href="#">Илья Зинченко</ReviewerName>
@@ -184,7 +189,12 @@ const Component = () => {
             <ReviewBlock>
               <VerticalContainer gap={3} mbGap={4}>
                 <HorizontalContainer gap={5} mbGap={3}>
-                  <ReviewerImg src={Reviewer2Src} alt="reviewer-2" />
+                  <ReviewerImg
+                    src={Reviewer2Src}
+                    alt="reviewer-2"
+                    width={48}
+                    height={48}
+                  />
                   <VerticalContainer gap={2}>
                     <HorizontalContainer gap={2}>
                       <ReviewerName href="#">Олег Бердов</ReviewerName>
@@ -205,7 +215,12 @@ const Component = () => {
             <ReviewBlock>
               <VerticalContainer gap={3} mbGap={4}>
                 <HorizontalContainer gap={5} mbGap={3}>
-                  <ReviewerImg src={Reviewer2Src} alt="reviewer-2" />
+                  <ReviewerImg
+                    src={Reviewer2Src}
+                    alt="reviewer-2"
+                    width={48}
+                    height={48}
+                  />
                   <VerticalContainer gap={2}>
                     <HorizontalContainer gap={2}>
                       <ReviewerName href="#">Олег Бердов</ReviewerName>
@@ -225,7 +240,12 @@ const Component = () => {
             <ReviewBlock>
               <VerticalContainer gap={3} mbGap={4}>
                 <HorizontalContainer gap={5} mbGap={3}>
-                  <ReviewerImg src={Reviewer1Src} alt="reviewer-1" />
+                  <ReviewerImg
+                    src={Reviewer1Src}
+                    alt="reviewer-1"
+                    width={48}
+                    height={48}
+                  />
                   <VerticalContainer gap={2}>
                     <HorizontalContainer gap={2}>
                       <ReviewerName href="#">Илья Зинченко</ReviewerName>
@@ -246,7 +266,7 @@ const Component = () => {
           </ReviewsContainer>
         </VerticalContainer>
       </Container>
-      <LineImage src={LineSrc} alt="dashed-line-black" />
+      <LineImage src={LineSrc} alt="dashed-line-black" priority />
       <StarImage src={StarSrc} alt="star" />
     </Wrapper>
   );

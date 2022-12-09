@@ -121,7 +121,7 @@ const Component = () => {
         </TextContainer>
         <LinkButton href="#">Попробовать бесплатно</LinkButton>
       </Container>
-      <BgLinesImg src={BgLinesSrc} alt="bg-lines" />
+      <BgLinesImg src={BgLinesSrc} alt="bg-lines" priority />
     </Wrapper>
   );
 };

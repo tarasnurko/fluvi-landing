@@ -14,6 +14,7 @@ import { UsageSection } from "@/epic/section-usage";
 import { QuestionsSection } from "@/epic/section-questions";
 import { ReviewsSection } from "@/epic/section-reviews";
 import { StartSection } from "@/epic/section-start";
+import { Footer } from "@/epic/footer";
 
 const Home: NextPage = () => {
   return (
@@ -27,7 +28,8 @@ const Home: NextPage = () => {
       <UsageSection />
       <QuestionsSection />
       <ReviewsSection />
-      <StartSection />
+      {/* <StartSection /> */}
+      <Footer />
     </PageContainer>
   );
 };
